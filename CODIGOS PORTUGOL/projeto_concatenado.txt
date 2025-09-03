@@ -1,36 +1,6 @@
-# Exercícios de Lógica de Programação – UC6
+==== Projeto concatenado - 03/09/2025 10:29:54,00 ====
 
-Este repositório contém a lista de **12 exercícios** do arquivo [`02 - Chuunin02.pdf`](./02%20-%20Chuunin02.pdf), juntamente com suas **resoluções em Portugol**.  
-Além disso, cada exercício conta com um espaço reservado para **diagramas** explicativos (fluxogramas, diagramas de decisão, etc.).
-
----
-
-## 📂 Estrutura do Projeto
-
-- `02 - Chuunin02.pdf`: Arquivo com todos os enunciados dos exercícios.
-- `CODIGOS PORTUGOL/`: Pasta com todas as soluções em Portugol.
-- `DIAGRAMAS/`: Pasta onde serão armazenadas as imagens dos diagramas (uma imagem por exercício).
-- `README.md`: Este documento com a resolução dos exercícios.
-
----.
-
-## 🎨 Legenda - Diagramas
-
-<img src="./diagramas/LEGENDA.png" alt="Legenda Diagrama" width="400"/>
-
----
-
-## 📝 Exercícios
-
-### 1. Exercício 1
-**Enunciado:**  
-1.Faça um algoritmo para “Calcular o estoque médio de uma peça”, sendo que:
-```
-ESTOQUE MÉDIO = (QUANTIDADE MÍNIMA + QUANTIDADE MÁXIMA) / 2
-```
-
-**Código:**
-```portugol
+===== [.por] C:\Users\Vilander\Documents\GitHub\ATIVIDADES_DE_LOGICA\ATIVIDADES LOGICA\CODIGOS PORTUGOL\Exercicio 01 - UC6.por =====
 programa {
   funcao inicio() {
     inteiro minPecas=0,maxPecas=0,estoqueMedia=0
@@ -38,25 +8,12 @@ programa {
     leia(minPecas)
     escreva("Digite a quantidade máxima de peças no estoque: ")
     leia(maxPecas)
-
     estoqueMedia = (minPecas+maxPecas)/2
     escreva("A média de peças em estoque é: "+estoqueMedia)
   }
 }
-```
 
-**Diagrama:**  
-
-<img src="./diagramas/exercicio01.png" alt="Diagrama Exercício 01" width="400"/>
-
----
-
-### 2. Exercício 2
-**Enunciado:**  
-2.Faça um programa que calcule a média simples (aritmética) de 3 valores quaisquerinformado pelo usuário. Utilize as variáveis valor1, valor2 e valor3. Exiba a média na tela para o usuário.
-
-**Código:**
-```portugol
+===== [.por] C:\Users\Vilander\Documents\GitHub\ATIVIDADES_DE_LOGICA\ATIVIDADES LOGICA\CODIGOS PORTUGOL\Exercicio 02 - UC6.por =====
 programa {
   funcao inicio() {
     inteiro valor1=0,valor2=0,valor3=0,total=0
@@ -66,48 +23,24 @@ programa {
     leia(valor2)
     escreva("Digite outro número: ")
     leia(valor3)
-
     total = (valor1+valor2+valor3)/3
     escreva("A média dos números é: "+total)
   }
 }
-```
 
-**Diagrama:**  
-<img src="./diagramas/exercicio02.png" alt="Diagrama Exercício 02" width="400"/>
-
----
-
-### 3. Exercício 3
-**Enunciado:**  
- 3.Considerando que todos os meses tenham 30 dias, calcular o total de dias de n mesesinformado pelo usuário. Exibir na tela o resultado do cálculo com uma mensagem amigável.
-
-**Código:**
-```portugol
+===== [.por] C:\Users\Vilander\Documents\GitHub\ATIVIDADES_DE_LOGICA\ATIVIDADES LOGICA\CODIGOS PORTUGOL\Exercicio 03 - UC6.por =====
 programa {
   funcao inicio() {
     inteiro meses=0,calculoDias=0
     escreva("Vamos descobrir quantos dias tem na quantidade de meses que você informar!")
     escreva("\nDigite uma quantidade de meses: ")
     leia(meses)
-
     calculoDias = meses*30
     escreva("A quantidade de meses informado possui "+calculoDias+" dias!!!")
   }
 }
-```
 
-**Diagrama:**  
-<img src="./diagramas/exercicio03.png" alt="Diagrama Exercício 03" width="400"/>
-
----
-
-### 4. Exercício 4
-**Enunciado:**  
-4.Faça um algoritmo que leia 5 números do teclado, e faça uma média. 
-
-**Código:**
-```portugol
+===== [.por] C:\Users\Vilander\Documents\GitHub\ATIVIDADES_DE_LOGICA\ATIVIDADES LOGICA\CODIGOS PORTUGOL\Exercicio 04 -UC6.por =====
 programa {
   funcao inicio() {
     inteiro n1=0,n2=0,n3=0,n4=0,n5=0,calculoMedia=0
@@ -122,24 +55,12 @@ programa {
     leia(n4)
     escreva("Digite o quinto número: ")
     leia(n5)
-
     calculoMedia = (n1+n2+n3+n4+n5)/5
     escreva("A média dos números apresentados é: "+calculoMedia)
   }
 }
-```
 
-**Diagrama:**  
-<img src="./diagramas/exercicio04.png" alt="Diagrama Exercício 04" width="400"/>
-
----
-
-### 5. Exercício 5
-**Enunciado:**  
-5.Faça um algoritmo que leia o nome, o sexo e o estado civil de uma pessoa. Caso sexo seja **“M”** e estado civil seja **“CASADO”**, solicitar o tempo de casada (anos).
-
-**Código:**
-```portugol
+===== [.por] C:\Users\Vilander\Documents\GitHub\ATIVIDADES_DE_LOGICA\ATIVIDADES LOGICA\CODIGOS PORTUGOL\Exercicio 05 -UC6.por =====
 programa {
   funcao inicio() {
     caracter sexo
@@ -163,19 +84,8 @@ programa {
     }
   }
 }
-```
 
-**Diagrama:**  
-<img src="./diagramas/exercicio05.png" alt="Diagrama Exercício 05" width="800"/>
-
----
-
-### 6. Exercício 6
-**Enunciado:**  
-6.Elabore um programa que leia dois números reais, a operação aritmética e, então, calcule eimprima o resultado da operação desejada. Utilize os símbolos (`+`,`-`,`*`,`/`) para identificar aoperação aritmética. Caso a operação pretendida seja diferente das implementadas, oprograma deverá exibir a mensagem *“Operação Inválida”* para o usuário.
-
-**Código:**
-```portugol
+===== [.por] C:\Users\Vilander\Documents\GitHub\ATIVIDADES_DE_LOGICA\ATIVIDADES LOGICA\CODIGOS PORTUGOL\Exercicio 06 - UC6.por =====
 programa {
   funcao inicio() {
     real n1=0,n2=0, resultado=0
@@ -208,21 +118,13 @@ programa {
       caso contrario: 
         escreva("Operador Inválido")
     }
+
+
+    
   }
 }
-```
 
-**Diagrama:**  
-<img src="./diagramas/exercicio06.png" alt="Diagrama Exercício 06" width="1200"/>
-
----
-
-### 7. Exercício 7
-**Enunciado:**  
-7.Faça um algoritmo que leia uma variável e some `5` caso seja **par** ou some `8` caso seja **ímpar**,imprimir o resultado desta operação.
-
-**Código:**
-```portugol
+===== [.por] C:\Users\Vilander\Documents\GitHub\ATIVIDADES_DE_LOGICA\ATIVIDADES LOGICA\CODIGOS PORTUGOL\Exercicio 07 -UC6.por =====
 programa {
   funcao inicio() {
     real numero=0, soma=0
@@ -237,21 +139,11 @@ programa {
       soma=numero+8
       escreva("Resultado: "+numero+"+8="+soma)
     }
+
   }
 }
-```
 
-**Diagrama:**  
-<img src="./diagramas/exercicio07.png" alt="Diagrama Exercício 07" width="800"/>
-
----
-
-### 8. Exercício 8
-**Enunciado:**  
-8.Escreva um algoritmo que leia três valores **inteiros e diferentes** e mostre-os em ordem **decrescente**.
-
-**Código:**
-```portugol
+===== [.por] C:\Users\Vilander\Documents\GitHub\ATIVIDADES_DE_LOGICA\ATIVIDADES LOGICA\CODIGOS PORTUGOL\Exercicio 08 - UC6.por =====
 programa {
   funcao inicio() {
     inteiro n1, n2, n3, maior, meio, menor
@@ -263,6 +155,7 @@ programa {
     escreva("Digite o terceiro número: ")
     leia(n3)
 
+    // Descobrindo o maior
     se (n1 > n2 e n1 > n3) {
       maior = n1
       se (n2 > n3) {
@@ -295,19 +188,8 @@ programa {
     escreva("Ordem decrescente: ", maior, ", ", meio, ", ", menor)
   }
 }
-```
 
-**Diagrama:**  
-<img src="./diagramas/exercicio08.png" alt="Diagrama Exercício 08" width="1200"/>
-
----
-
-### 9. Exercício 9
-**Enunciado:**  
-9.Faça um algoritmo que mostre na tela todos os números entre `1` e `100`.
-
-**Código:**
-```portugol
+===== [.por] C:\Users\Vilander\Documents\GitHub\ATIVIDADES_DE_LOGICA\ATIVIDADES LOGICA\CODIGOS PORTUGOL\Exercicio 09 - UC6.por =====
 programa {
     funcao inicio() {
         inteiro i
@@ -317,27 +199,8 @@ programa {
         }
     }
 }
-```
 
-**Diagrama:**  
-<img src="./diagramas/exercicio09.png" alt="Diagrama Exercício 09" width="800"/>
-
----
-
-### 10. Exercício 10
-**Enunciado:**  
-10.Desenvolva um gerador de tabuada, capaz de gerar a tabuada de qualquer número inteiroentre `1` a `10` O usuário deve informar de qual numero ele deseja ver a tabuada. A saída deve ser conforme o exemplo abaixo:
-
-```
-Tabuada de 5: 
-5 X 1 = 5 
-5 X 2 = 10 
-... 
-5 X 10 = 50
-```
-
-**Código:**
-```portugol
+===== [.por] C:\Users\Vilander\Documents\GitHub\ATIVIDADES_DE_LOGICA\ATIVIDADES LOGICA\CODIGOS PORTUGOL\Exercicio 10 - UC6.por =====
 programa {
     funcao inicio() {
         inteiro numero, i
@@ -356,19 +219,7 @@ programa {
         }
     }
 }
-```
-
-**Diagrama:**  
-<img src="./diagramas/exercicio10.png" alt="Diagrama Exercício 10" width="800"/>
-
----
-
-### 11. Exercício 11
-**Enunciado:**  
- 11.Faça um programa que leia um nome de usuário e a sua senha e não aceite a senha igual ao nome do usuário, mostrando uma mensagem de erro e voltando a pedir as informações.
-
-**Código:**
-```portugol
+===== [.por] C:\Users\Vilander\Documents\GitHub\ATIVIDADES_DE_LOGICA\ATIVIDADES LOGICA\CODIGOS PORTUGOL\Exercicio 11 - UC6.por =====
 programa {
     funcao inicio() {
         cadeia nome, senha
@@ -379,6 +230,7 @@ programa {
         escreva("Digite sua senha: ")
         leia(senha)
 
+        
         enquanto (senha == nome) {
             escreva("Nome usuário e senha não podem ser iguais, tente novamente!\n")
             escreva("Digite seu nome usuário: ")
@@ -390,19 +242,8 @@ programa {
         escreva("Logado com sucesso!\n")
     }
 }
-```
 
-**Diagrama:**  
-<img src="./diagramas/exercicio11.png" alt="Diagrama Exercício 11" width="400"/>
-
----
-
-### 12. Exercício 12
-**Enunciado:**  
- 12.Faça um programa que peça uma nota, **entre zero e dez**. Mostre uma mensagem caso o valor seja inválido e continue pedindo até que o usuário informe um valor válido.
-
-**Código:**
-```portugol
+===== [.por] C:\Users\Vilander\Documents\GitHub\ATIVIDADES_DE_LOGICA\ATIVIDADES LOGICA\CODIGOS PORTUGOL\Exercicio 12 -UC6.por =====
 programa {
     funcao inicio() {
         inteiro nota=0
@@ -410,35 +251,15 @@ programa {
         escreva("Digite uma nota entre 0 e 10: ")
         leia(nota)
 
+     
+        
         enquanto (nota>10) {
             escreva("Nota não atende as especificações, tente novamente!\n")
             escreva("Digite uma nota entre 0 e 10: ")
             leia(nota)
+            
         }
 
         escreva("Sucesso!\n")
     }
 }
-```
-
-**Diagrama:**  
-<img src="./diagramas/exercicio12.png" alt="Diagrama Exercício 12" width="800"/>
-
----
-
-## 🚀 Como Usar
-1. Leia os enunciados no PDF [`02 - Chuunin02.pdf`](./02%20-%20Chuunin02.pdf).
-2. Veja as soluções diretamente acima.
-3. Adicione os diagramas na pasta `diagramas/`, nomeados como `exercicioXX.png`.
-
----
-
-## 📌 Tecnologias Utilizadas
-- **Portugol Studio**: Para escrever e executar os algoritmos.
-- **FIGMA FigJam**: Para criar os diagramas.
-- **Markdown**: Para documentar os exercícios e soluções.
-
----
-
-## 👤 Autor
-**Vilander Adalberto da Silva Costa**
