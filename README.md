@@ -411,7 +411,7 @@ programa {
         escreva("Digite uma nota entre 0 e 10: ")
         leia(nota)
 
-        enquanto (nota>10) {
+        enquanto (nota<0 e nota>10) {
             escreva("Nota não atende as especificações, tente novamente!\n")
             escreva("Digite uma nota entre 0 e 10: ")
             leia(nota)
