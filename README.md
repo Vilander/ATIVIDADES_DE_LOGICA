@@ -340,7 +340,7 @@ Tabuada de 5:
 ```portugol
 programa {
     funcao inicio() {
-        inteiro numero, i
+        inteiro numero=0, i=0, multiplicacao=0
 
         escreva("Digite um número entre 1 e 10: ")
         leia(numero)
@@ -349,7 +349,8 @@ programa {
             escreva("Tabuada do ", numero, ":\n")
 
             para (i = 1; i <= 10; i++) {
-                escreva(numero, " x ", i, " = ", numero * i, "\n")
+                multiplicacao = numero*i
+                escreva(numero, " x ", i, " = ", multiplicacao, "\n")
             }
         } senao {
             escreva("Número inválido! Digite entre 1 e 10.\n")
